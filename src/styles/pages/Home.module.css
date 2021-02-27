@@ -2,10 +2,10 @@
     height: 100vh;
     max-width: 992px;
     margin: 0 auto;
-    padding: 2.5rem 2rem;
+    padding: 1rem 2rem 2.5rem 2rem;
 
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 .container section{
