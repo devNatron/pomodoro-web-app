@@ -1,0 +1,47 @@
+.gitHubLoginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem 0 1rem 0;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer p{
+    color: var(--texto);
+    line-height: 1.5;
+    max-width: 60%;
+    margin-left: 1.5rem;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.inputContainer input{
+    height: 3rem;
+
+    margin-right: 1rem;
+    padding-left: 0.5rem;
+
+    box-sizing: border-box;
+}
+
+.inputContainer a{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
