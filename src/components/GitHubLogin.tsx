@@ -3,11 +3,25 @@ import styles from '../styles/components/GitHubLogin.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-import { useRouter } from 'next/router'
+import {useSession, signIn, } from 'next-auth/client'
+import { useRouter } from 'next/router';
 
 export function GitHubLogin(){
+    const [session, loading] = useSession()
     const router = useRouter()
-    const url = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`
+
+    
+    async function handleClick(e){
+        e.preventDefault();
+        
+        if(session){
+            router.push('/home')
+        }
+        else{
+            await signIn('github')
+            router.push('/home')
+        }
+    }
 
     return(
         <div className={styles.gitHubLoginContainer}>
@@ -17,7 +31,7 @@ export function GitHubLogin(){
             </header>
             <div className={styles.inputContainer}>
                 <input type="text" name="" id=""/>
-                <a href={url}>
+                <a onClick={handleClick}>
                     <FontAwesomeIcon icon={faChevronRight} size="2x" className={styles.loginIcon}></FontAwesomeIcon>
                 </a>
             </div>

@@ -1,0 +1,28 @@
+.MenuContainer{
+    position: absolute;
+    display: flex;
+    right: 2rem;
+    top: 1rem;
+}
+
+.Menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu li{
+    margin: 0 1rem 0 1rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    color: var(--text);
+}
+
+.Menu a{
+    cursor: pointer;
+}
+
+.Menu a:hover{
+    text-decoration: underline;
+}

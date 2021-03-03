@@ -9,12 +9,12 @@ type CookieProps = {
     }
 }
 
-export default async function OAuthGitHub(req: NextApiRequest, res: NextApiResponse){
+export default async function Callback(req: NextApiRequest, res: NextApiResponse){
     const { query } = req
     const { code } = query
 
     if(!code){
-        return res.send({
+        res.send({
             success: false,
             message: 'Error: no code'
         })
@@ -22,8 +22,11 @@ export default async function OAuthGitHub(req: NextApiRequest, res: NextApiRespo
 
     const userData = await getAccessToken(code)
     .then(async (data) =>{
-        if (data.error && !data.access_token){
-            return null
+        if (data.error || !data.access_token){
+            res.send({
+                success: false,
+                message: data.error
+            })
         }
 
         return await getUserData(data.access_token)
@@ -33,10 +36,12 @@ export default async function OAuthGitHub(req: NextApiRequest, res: NextApiRespo
         const githubLogin: CookieProps = {token: 'githubLogin', value: userData.login}
         /* const githubId: CookieProps = {token: 'githubId', value: userData.id} */
         const githubAvatar: CookieProps = {token: 'githubAvatar', value: userData.avatar_url}
+        
         res.setHeader('Set-Cookie', toCookie([
             githubLogin,
             githubAvatar,
         ]));
+        
         res.redirect('/home')
     }
 }
