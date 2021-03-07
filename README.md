@@ -63,6 +63,6 @@ npm run start
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença MIT.
 
-[⬆ Voltar ao topo](#Pomodoro Web App)<br>
+[⬆ Voltar ao topo](#pomodoro-web-app)<br>
