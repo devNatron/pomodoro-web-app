@@ -11,7 +11,7 @@
 --->
 
 ![Demo](app.gif)
-> Um pomodoro web app gamificado inspirado na tecnica de pomodoro.
+> Um pomodoro web app gamificado inspirado na técnica de pomodoro.
 
 ### Recursos disponíveis
 
