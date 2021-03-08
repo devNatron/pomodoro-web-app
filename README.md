@@ -25,6 +25,7 @@
 - [ ] Modo noturno
 - [ ] Regulagem dos ciclos
 - [ ] Login como convidado
+- [ ] Progressive web app
 
 ## 💻 Pré-requisitos
 
