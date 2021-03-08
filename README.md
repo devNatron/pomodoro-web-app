@@ -10,10 +10,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 --->
 
-<p align="center">
-  <img src="app.gif" alt="animated" />
-</p>
-
+![Demo](app.gif)
 > Um pomodoro web app gamificado inspirado na tecnica de pomodoro.
 
 ### Recursos disponíveis
