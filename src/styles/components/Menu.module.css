@@ -1,8 +1,7 @@
+
 .MenuContainer{
-    position: absolute;
     display: flex;
-    right: 2rem;
-    top: 1rem;
+    align-self: initial;
 }
 
 .Menu{

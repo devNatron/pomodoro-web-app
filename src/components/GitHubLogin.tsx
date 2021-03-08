@@ -29,12 +29,14 @@ export function GitHubLogin(){
                 <img src="icons/github.svg" alt="github logo"/>
                 <p>Faça login com o Github para começar.</p>
             </header>
-            <div className={styles.inputContainer}>
-                <input type="text" name="" id=""/>
-                <a onClick={handleClick}>
-                    <FontAwesomeIcon icon={faChevronRight} size="2x" className={styles.loginIcon}></FontAwesomeIcon>
-                </a>
-            </div>
+            <button 
+                type="button" 
+                onClick={handleClick}
+                className={styles.loginButton}
+            >
+                entrar
+                <FontAwesomeIcon icon={faChevronRight} size="2x" className={styles.loginIcon}></FontAwesomeIcon>
+            </button>
         </div>
     )
 }

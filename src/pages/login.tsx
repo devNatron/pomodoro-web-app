@@ -17,8 +17,10 @@ export default function Login(){
     return(
         <div className={styles.loginPageContainer}>
             <div className={styles.loginContainer}>
-                <header>Moveit</header>
-                <p>Bem-vindo</p>
+                <header>
+                    <img src='/logo-full.svg'/>
+                    <p>Bem-vindo</p>
+                </header>
                 <GitHubLogin/>
             </div>
         </div> 

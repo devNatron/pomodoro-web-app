@@ -3,6 +3,7 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Profile.module.css'
 
 import {useSession} from 'next-auth/client'
+import { Menu } from './Menu';
 
 type ProfileProps = {
     name: string,
@@ -22,6 +23,7 @@ export function Profile({name, avatarUrl}: ProfileProps){
                     Level {level}
                 </p>
             </div>
+            <Menu/>
         </div>
     );
 }

@@ -6,12 +6,8 @@ export function Menu(){
     return(
         <div className={styles.MenuContainer}>
             <ul className={styles.Menu}>
-                <MenuItem
-                    label="about"
-                    url="/about"
-                />
                 <MenuItem 
-                    label="logout"
+                    label="Sair"
                     url="github"
                     clickFunc={signOut}
                 />

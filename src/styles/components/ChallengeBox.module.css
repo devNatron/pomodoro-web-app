@@ -107,3 +107,12 @@
 .challengeActive footer button:hover{
     filter: brightness(0.9);
 }
+
+@media(max-width: 1080px){
+    .challengeNotActive p:last-child{
+        max-width: 80%;
+    }
+    .challengeNotActive p:last-child img{
+        margin-right: 0.5rem;
+    }
+}

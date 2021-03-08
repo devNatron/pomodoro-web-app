@@ -20,28 +20,36 @@
     margin-left: 1.5rem;
 }
 
-.inputContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.inputContainer input{
+.loginButton{
+    position: relative;
+    width: 70%;
     height: 3rem;
 
-    margin-right: 1rem;
-    padding-left: 0.5rem;
+    margin-top: 1rem;
 
-    box-sizing: border-box;
-}
-
-.inputContainer a{
-    height: 1.2rem;
-    width: 1.2rem;
-    cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 5px;
+    
+    background: var(--blue);
+    color: var(--white);
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    transition: background-color .2s;
 }
 
+.loginIcon{
+    position: absolute;
+    font-size: 1.25rem;
+    right: 1rem;
+}
+
+.loginButton:not(:disabled):hover{
+    background: var(--blue-dark);
+}

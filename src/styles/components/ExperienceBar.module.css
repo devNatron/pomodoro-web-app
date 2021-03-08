@@ -29,3 +29,10 @@ span.currentExperience{
     top: 10px;
     transform: translateX(-50%);
 }
+
+@media(max-width: 1080px){
+    .experienceBar{
+        margin-bottom: 1rem;
+    }
+}
+

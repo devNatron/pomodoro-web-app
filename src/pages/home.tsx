@@ -43,7 +43,6 @@ export default function Home(props: UserProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
-      <Menu/>
       <div className={styles.container}>
         <Head>
           <title>Inicio | move.it</title>
